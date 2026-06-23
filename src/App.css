@@ -182,3 +182,15 @@
     border-right-color: var(--border);
   }
 }
+
+/* スマホ表示の崩れを直す */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px; /* タイトルの文字を少し小さく */
+    word-break: break-all; /* 長い単語でも折り返す */
+  }
+  
+  .container {
+    padding: 10px; /* 余白を調整 */
+  }
+}
